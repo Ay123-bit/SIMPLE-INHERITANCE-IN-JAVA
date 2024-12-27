@@ -1,0 +1,22 @@
+//INPUT
+import java.util.Scanner;
+class Student {
+    int a;
+    void input() {
+        Scanner sc = new Scanner(System.in); 
+        System.out.print("Enter an integer: ");
+        a = sc.nextInt(); 
+    }
+}
+class Ankit extends Student {
+    void disp() {
+        System.out.println("Value of a: " + a);
+    }
+    public static void main(String[] args) {
+        Ankit r = new Ankit();
+        r.input();  
+        r.disp();   
+    }
+}
+//OUTPUT
+Enter an Integer: Value of a: 12
